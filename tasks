@@ -1,0 +1,17 @@
+1 - Fazer as requisições para pegar o pokemon do player e do inimigo (nao precisa ser aleatorio)
+2 - Fazer a logica de pegar a habilidade do pokemon da api e inserir no pokemon do player e do inimigo
+3 - Fazer a logica de "attack" do Player e de "parry" do inimigo
+4 - Fazer a logica de attack do Inimigo e "parry" do Player
+5 - Fazer a logica de carregar o especial e informar que o especial está carregado
+6 - Fazer o Player atacar com especial o inimigo
+7 - Fazer o Inimigo atacar com especial o Player
+8 - Fazer o sistema de game over e vitoria
+
+Regras:
+// Quando o Player ou Inimigo conseguir dar parry ele ganha +10 de barra de statusSpecial
+// O ataque tem que ter um tempo de ataque de 0.5 milissegundos e deve ter um cooldown de 1 segundo
+// O parry deve ocorrer dentro de 0.5 milissegundos que é o tempo de carregar o attack
+// O parry tem um cooldown de 0.7 milissegundos
+// O especial nao pode ser counterado
+// Nao pode usar atack ao mesmo tempo do especial
+// Quando ele usa especial o cooldown do ataque vai para 1 segundo
