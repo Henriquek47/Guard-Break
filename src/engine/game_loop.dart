@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import '../api/pokemon_repo.dart';
 import '../models/pokemon_model.dart';
 import '../objects/world_object.dart';
 import 'game_input.dart';
@@ -12,11 +11,6 @@ class GameManager {
   PokemonModel? pokemonInimigo;
   PokemonModel? pokemonAlidado;
 
-  Future<void> loadPokemons() async {
-    pokemonAlidado = await getPokemon('pikachu');
-    pokemonInimigo = await getPokemon('charmeleon');
-  }
-
   Future<void> gameLoop() async {
     const int fps = 60;
     const int msPerFrame =
@@ -26,6 +20,7 @@ class GameManager {
     int previousMs = stopwatch.elapsedMilliseconds;
 
     WorldObject worldObject = WorldObject();
+    worldObject.init();
     activeObjects.add(worldObject);
     _gameInput.initInputHandler();
 
